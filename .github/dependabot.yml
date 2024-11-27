@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/" # directorio raíz
+    schedule:
+      interval: "every-week"  # Valor inválido para la frecuencia
+    commit-message:
+      prefix: "update"
+  - package-ecosystem: "npm"
+    directory: "/backend"
+    schedule:
+      interval: "monthly"
+    commit-message:
+      prefix: "chore"
